@@ -26,7 +26,7 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1597737625561,
+  "startTime": 1597745334796,
   "success": false,
   "testResults": [
     {
@@ -36,8 +36,8 @@
       "numPendingTests": 19,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1597737683637,
-        "start": 1597737626671
+        "end": 1597745392492,
+        "start": 1597745335764
       },
       "snapshot": {
         "added": 0,
@@ -54,7 +54,7 @@
           "ancestorTitles": [
             "brimo testing"
           ],
-          "duration": 51489,
+          "duration": 52261,
           "failureMessages": [
             "Error: expect(received).toMatch(expected)\n\nExpected substring: \"gagal\"\nReceived string:    \"sukses\"\n    at Object.test (/var/www/automation/test/brimo/brimo-micro/functional.test.js:297:32)"
           ],
