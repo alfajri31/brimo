@@ -4,11 +4,11 @@
   "numPassedTestSuites": 0,
   "numPassedTests": 0,
   "numPendingTestSuites": 0,
-  "numPendingTests": 0,
+  "numPendingTests": 19,
   "numRuntimeErrorTestSuites": 0,
   "numTodoTests": 0,
   "numTotalTestSuites": 1,
-  "numTotalTests": 1,
+  "numTotalTests": 20,
   "openHandles": [],
   "snapshot": {
     "added": 0,
@@ -26,18 +26,18 @@
     "unmatched": 0,
     "updated": 0
   },
-  "startTime": 1596096626337,
+  "startTime": 1597737625561,
   "success": false,
   "testResults": [
     {
-      "failureMessage": "\u001b[1m\u001b[31m  \u001b[1m● \u001b[1mbrimo form fills › step 1 should be success\u001b[39m\u001b[22m\n\n    TimeoutError: waiting for selector \"[visible] svg[data-icon=\"portrait\"]\" failed: timeout 30000ms exceeded\n\u001b[2m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 53 | \u001b[39m async \u001b[36mfunction\u001b[39m getSelfie () {\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 54 | \u001b[39m    \u001b[90m//input selfie\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m\u001b[31m\u001b[1m>\u001b[2m\u001b[39m\u001b[90m 55 | \u001b[39m    await page\u001b[33m.\u001b[39mclick(\u001b[32m'svg[data-icon=\"portrait\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m    | \u001b[39m               \u001b[31m\u001b[1m^\u001b[2m\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 56 | \u001b[39m    await page\u001b[33m.\u001b[39mwaitFor(\u001b[35m4000\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 57 | \u001b[39m    await page\u001b[33m.\u001b[39mclick(\u001b[32m'button[class=\"btn mr-4 ml-4 btn-capture\"]'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\u001b[22m\n\u001b[2m    \u001b[0m \u001b[90m 58 | \u001b[39m    await page\u001b[33m.\u001b[39mwaitForSelector(\u001b[32m'svg[data-icon=\"check\"]'\u001b[39m\u001b[33m,\u001b[39m{\u001b[0m\u001b[22m\n\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat new RerunnableTask (\u001b[2mnode_modules/playwright-core/lib/frames.js\u001b[2m:822:34)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Frame._scheduleRerunnableTask (\u001b[2mnode_modules/playwright-core/lib/frames.js\u001b[2m:770:32)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Frame._waitForSelectorInUtilityContext (\u001b[2mnode_modules/playwright-core/lib/frames.js\u001b[2m:741:35)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Frame._optionallyWaitForSelectorInUtilityContext (\u001b[2mnode_modules/playwright-core/lib/frames.js\u001b[2m:721:44)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Frame.click (\u001b[2mnode_modules/playwright-core/lib/frames.js\u001b[2m:657:35)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Frame.<anonymous> (\u001b[2mnode_modules/playwright-core/lib/helper.js\u001b[2m:55:31)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Page.click (\u001b[2mnode_modules/playwright-core/lib/page.js\u001b[2m:353:33)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Page.click (\u001b[2mnode_modules/playwright-core/lib/helper.js\u001b[2m:55:31)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat getSelfie (\u001b[2m\u001b[0m\u001b[36mtest/brimo/micro/functional.test.js\u001b[39m\u001b[0m\u001b[2m:55:16)\u001b[2m\u001b[22m\n\u001b[2m      \u001b[2mat Object.<anonymous> (\u001b[2m\u001b[0m\u001b[36mtest/brimo/micro/functional.test.js\u001b[39m\u001b[0m\u001b[2m:146:15)\u001b[2m\u001b[22m\n",
+      "failureMessage": "  ● brimo testing › step 1 should be success\n\n    expect(received).toMatch(expected)\n\n    Expected substring: \"gagal\"\n    Received string:    \"sukses\"\n\n      295 |         await init.optmimal_ss('brimo','extra desktop','step-1',2000,'chromium')\n      296 |         await page.click('button[type=\"submit\"]');\n    > 297 |         await expect('sukses').toMatch('gagal')\n          |                                ^\n      298 |     },3600000)\n      299 | \n      300 |     test.skip('nomor telepon tidak perlu prefix 0 atau kode area', async() => {\n\n      at Object.test (test/brimo/brimo-micro/functional.test.js:297:32)\n",
       "numFailingTests": 1,
       "numPassingTests": 0,
-      "numPendingTests": 0,
+      "numPendingTests": 19,
       "numTodoTests": 0,
       "perfStats": {
-        "end": 1596096687649,
-        "start": 1596096630080
+        "end": 1597737683637,
+        "start": 1597737626671
       },
       "snapshot": {
         "added": 0,
@@ -48,21 +48,249 @@
         "updated": 0,
         "uncheckedKeys": []
       },
-      "testFilePath": "C:\\Users\\Fajri\\Documents\\automation\\test\\brimo\\micro\\functional.test.js",
+      "testFilePath": "/var/www/automation/test/brimo/brimo-micro/functional.test.js",
       "testResults": [
         {
           "ancestorTitles": [
-            "brimo form fills"
+            "brimo testing"
           ],
-          "duration": 39570,
+          "duration": 51489,
           "failureMessages": [
-            "TimeoutError: waiting for selector \"[visible] svg[data-icon=\"portrait\"]\" failed: timeout 30000ms exceeded\n    at new RerunnableTask (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\frames.js:822:34)\n    at Frame._scheduleRerunnableTask (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\frames.js:770:32)\n    at Frame._waitForSelectorInUtilityContext (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\frames.js:741:35)\n    at Frame._optionallyWaitForSelectorInUtilityContext (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\frames.js:721:44)\n    at Frame.click (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\frames.js:657:35)\n    at Frame.<anonymous> (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\helper.js:55:31)\n    at Page.click (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\page.js:353:33)\n    at Page.click (C:\\Users\\Fajri\\Documents\\automation\\node_modules\\playwright-core\\lib\\helper.js:55:31)\n    at getSelfie (C:\\Users\\Fajri\\Documents\\automation\\test\\brimo\\micro\\functional.test.js:55:16)\n    at Object.<anonymous> (C:\\Users\\Fajri\\Documents\\automation\\test\\brimo\\micro\\functional.test.js:146:15)"
+            "Error: expect(received).toMatch(expected)\n\nExpected substring: \"gagal\"\nReceived string:    \"sukses\"\n    at Object.test (/var/www/automation/test/brimo/brimo-micro/functional.test.js:297:32)"
           ],
-          "fullName": "brimo form fills step 1 should be success",
+          "fullName": "brimo testing step 1 should be success",
           "location": null,
           "numPassingAsserts": 0,
           "status": "failed",
           "title": "step 1 should be success"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing nomor telepon tidak perlu prefix 0 atau kode area",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "nomor telepon tidak perlu prefix 0 atau kode area"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing gaji pertahun gunakan formatter thousand",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "gaji pertahun gunakan formatter thousand"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Perusahaan lama bekerja validasi error, padahal field \"Lama Bekerja Tahun\"dan \"Lama Bekerja Bulan\"sudah diisi",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Perusahaan lama bekerja validasi error, padahal field \"Lama Bekerja Tahun\"dan \"Lama Bekerja Bulan\"sudah diisi"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Update Data Kota",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Update Data Kota"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Rekening BRI limit 15 digit (min. 15 digit, maks. 15 digit). Hanya 15 Digit",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Rekening BRI limit 15 digit (min. 15 digit, maks. 15 digit). Hanya 15 Digit"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing NPWP di-sanitize dan length nya adalah 15 digit",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "NPWP di-sanitize dan length nya adalah 15 digit"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing NPWP menggunakan formatter dengan format NPWP",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "NPWP menggunakan formatter dengan format NPWP"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Image kartu di Halaman intro untuk device yang kecil overflow",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Image kartu di Halaman intro untuk device yang kecil overflow"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Setelah user memilih kamera, lalu klik \"Foto NPWP\". Kamera tidak muncul",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Setelah user memilih kamera, lalu klik \"Foto NPWP\". Kamera tidak muncul"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Jika kamera tidak ditemukan, layar hanya akan menampilkan bar loading saja. Munculkan pesan notifikasi \"Kamera tidak ditemukan. Silakan enable Kamera Anda\"",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Jika kamera tidak ditemukan, layar hanya akan menampilkan bar loading saja. Munculkan pesan notifikasi \"Kamera tidak ditemukan. Silakan enable Kamera Anda\""
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Pilihan \"Status Rumah\" memanjang kebawah",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Pilihan \"Status Rumah\" memanjang kebawah"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"Jumlah Tanggungan\" dibatasi maksimal 2 digit saja. Dengan validasi range antara \"0-99\" dan tidak perlu pakai format thousand",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"Jumlah Tanggungan\" dibatasi maksimal 2 digit saja. Dengan validasi range antara \"0-99\" dan tidak perlu pakai format thousand"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"Lama Menempati\" dibatasi maksimal 2 digit angka saja. Dengan validasi range antara \"0-99\" ",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"Lama Menempati\" dibatasi maksimal 2 digit angka saja. Dengan validasi range antara \"0-99\" "
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"RT\" dibatasi maksimal 3 digit angka saja. Dengan validasi range antara \"000 - 999\"",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"RT\" dibatasi maksimal 3 digit angka saja. Dengan validasi range antara \"000 - 999\""
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"RW\" dibatasi maksimal 3 digit angka saja. Dengan validasi range antara \"000 - 999\"",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"RW\" dibatasi maksimal 3 digit angka saja. Dengan validasi range antara \"000 - 999\""
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"Kode Pos\" dibatasi maksimal 5 digit angka saja",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"Kode Pos\" dibatasi maksimal 5 digit angka saja"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"Kode Area Rumah\" dibatas maksimal 4 digit angka saja",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"Kode Area Rumah\" dibatas maksimal 4 digit angka saja"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"Nomor Telepon Rumah\" dibatasi maksimal 10 digit angka saja",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"Nomor Telepon Rumah\" dibatasi maksimal 10 digit angka saja"
+        },
+        {
+          "ancestorTitles": [
+            "brimo testing"
+          ],
+          "duration": 0,
+          "failureMessages": [],
+          "fullName": "brimo testing Field \"Nomor NPWP\" masih bisa dimasukkan lebih dari 15 digit",
+          "location": null,
+          "numPassingAsserts": 0,
+          "status": "pending",
+          "title": "Field \"Nomor NPWP\" masih bisa dimasukkan lebih dari 15 digit"
         }
       ],
       "skipped": false,
